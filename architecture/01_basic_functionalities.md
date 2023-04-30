@@ -16,7 +16,7 @@
  object, header files, notes, ...
 
  This solution will be created with:
-```
+```python
     tupaki_binary(
 	name = "my_processor",
 	impl = "instructions.cpp",
@@ -29,7 +29,7 @@
  This step is responsible to test assembly files for a given
  processor, and can be done with the following rule:
 
-```
+```python
     tupaky_project(
 	name = "my_assembly_project",
 	processor = ":my_processor",
