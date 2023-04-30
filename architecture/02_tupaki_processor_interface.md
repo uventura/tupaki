@@ -5,9 +5,9 @@ interface, then the artifact will not depend of the tupaki simulator.
 
 The interface will be:
 ```cpp
-    tupaki::BaseProcessor
+    tupaki::Processor
     {
-        virtual long long int getReg(std::string register_id);
+	virtual long long int getReg(std::string register_id);
 	virtual long long int setReg(std::string register_id, long long int value);
 
     	virtual void instructionCaller(std::string instruction_name, ...);
